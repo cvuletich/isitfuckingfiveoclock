@@ -32,6 +32,7 @@ $replies['no'] = array("Sucks.");
 <html>
   <head>
     <title>Is It Fucking Five O'Clock?</title>
+    <meta name="author" content="Chris Vuletich" />
     <style>
       html, body {
         background-color: #000;
@@ -62,6 +63,16 @@ $replies['no'] = array("Sucks.");
         position: absolute;
         right: 20px;
       }
+      .powered {
+        color: #fff;
+        font-size: 8px;
+        position: fixed;
+        bottom: 5px;
+        right: 10px;
+      }
+      .powered a {
+        color: #fff;
+      }
     </style>
   </head>
   <body>
@@ -77,6 +88,7 @@ $replies['no'] = array("Sucks.");
       </div>
       <div class="small"><?php echo $replies[$isitfiveoclock][rand(0, count($replies[$isitfiveoclock]) - 1)]; ?></div>
     </div>
+    <div class="powered"><a href="http://chrisvuletich.com" target="_blank">http://chrisvuletich.com</a></div>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
